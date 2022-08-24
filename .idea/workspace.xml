@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="set Ephemeral if member don't have MANAGE MESSAGE permission">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-    </list>
+    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="update build.gradle.kts" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661301101733</updated>
-      <workItem from="1661301347687" duration="4908000" />
+      <workItem from="1661301347687" duration="4954000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1661305799458</created>
@@ -86,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661306356658</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update build.gradle.kts">
+      <created>1661306521801</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1661306521801</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="set Ephemeral if member don't have MANAGE MESSAGE permission" />
-    <option name="LAST_COMMIT_MESSAGE" value="set Ephemeral if member don't have MANAGE MESSAGE permission" />
+    <MESSAGE value="update build.gradle.kts" />
+    <option name="LAST_COMMIT_MESSAGE" value="update build.gradle.kts" />
   </component>
 </project>

@@ -1,0 +1,10 @@
+{
+  "": {
+    "BotListener": {
+      "commandLocalization": {
+        "info+name": "info",
+        "info+description": "info"
+      }
+    }
+  }
+}
