@@ -1,7 +1,7 @@
 package fr.ftnl.lang
 
-import fr.ftnl.GSON
 import com.google.gson.JsonObject
+import fr.ftnl.GSON
 import java.io.File
 
 /**

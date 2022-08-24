@@ -37,26 +37,29 @@ fun main(args : Array<String>) {
 		.create(GatewayIntent.getIntents(0))
 		.setToken(System.getenv("INVITE_LOGGER_DISCORD_TOKEN"))
 		.setAutoReconnect(true)
-		.disableCache(CacheFlag.values().toList())
+		.disableCache(
+				CacheFlag
+					.values()
+					.toList()
+		)
 		.setMemberCachePolicy(MemberCachePolicy.NONE)
 		.addEventListeners(BotListener())
 		.injectKTX()
 		.build()
 }
 
-class BotListener: CoroutineEventListener {
+class BotListener : CoroutineEventListener {
 	override suspend fun onEvent(event : GenericEvent) {
-		when(event){
+		when (event) {
 			is SlashCommandInteractionEvent -> {
 				val manager = lang.getLangManager(event.userLocale)
 				val embed = Embed {
-					title = manager
-						.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedTitle"),
-								   "It's time",
+					title = manager.getString(
+								LangKey.keyBuilder(this@BotListener, "slash", "embedTitle"),
+								"It's time",
 						)
-					description = manager
-						.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedDescription"),
-								   """
+					description = manager.getString(
+								LangKey.keyBuilder(this@BotListener, "slash", "embedDescription"), """
 									  After two great years of good and loyal service, it is time for me to leave you.
 
 									  InviteLogger Classic is terminating these services as of <t:1661983200:D>
@@ -65,13 +68,12 @@ class BotListener: CoroutineEventListener {
 						)
 					
 					field {
-						name = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField1Title"),
-									   "It's a fork :")
+						name = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField1Title"), "It's a fork :"
+							)
 						
-						value = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField1Value"),
-									   """
+						value = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField1Value"), """
 										   InviteLogger classic is a fork of an almost dead open-source project,
 										   it succeeded the InviteManager bot by taking over its code base.
 								   """.trimIndent()
@@ -79,13 +81,13 @@ class BotListener: CoroutineEventListener {
 						inline = false
 					}
 					field {
-						name = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField2Title"),
-									   "It has a non-negligible cost :")
+						name = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField2Title"),
+									"It has a non-negligible cost :"
+							)
 						
-						value = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField2Value"),
-									   """
+						value = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField2Value"), """
 										   InviteLogger classic consumes a large amount of resources,
 										   it is currently a large financial sinkhole the bot being completely free.
 								   """.trimIndent()
@@ -93,13 +95,13 @@ class BotListener: CoroutineEventListener {
 						inline = false
 					}
 					field {
-						name = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField3Title"),
-									   "Message content intent :")
+						name = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField3Title"),
+									"Message content intent :"
+							)
 						
-						value = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField3Value"),
-									   """
+						value = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField3Value"), """
 										   As of the end date of InviteLogger classic,
 										   Discord puts a limitation for bots regarding access to message content,
 										   it would be too much work to adapt the bot to slash commands,
@@ -109,13 +111,13 @@ class BotListener: CoroutineEventListener {
 						inline = false
 					}
 					field {
-						name = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField4Title"),
-									   "Some statistics :")
+						name = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField4Title"),
+									"Some statistics :"
+							)
 						
-						value = manager
-							.getString(LangKey.keyBuilder(this@BotListener, "slash", "embedField4Value"),
-									   """
+						value = manager.getString(
+									LangKey.keyBuilder(this@BotListener, "slash", "embedField4Value"), """
 										   InviteLogger Classic tracked 155 million logins from 46 million invitees,
 										   fulfilled 15 million orders,
 										   viewed 42 million invite codes and visited 212,000 servers,
@@ -131,35 +133,38 @@ class BotListener: CoroutineEventListener {
 				val message = MessageCreateBuilder()
 					.setEmbeds(embed)
 					.addActionRow(
-							Button.link(
-									manager.getString(
-											LangKey.keyBuilder(this@BotListener, "slash", "supportButtonLink"),
-											"https://discord.gg/eDQuKsFnSd"
-									),
-									manager.getString(
-											LangKey.keyBuilder(this@BotListener, "slash", "supportButtonText"),
-											"My support server"
-									)
-							).withEmoji(Emoji.fromCustom("discord", 620220553793503274L, true)),
+							Button
+								.link(
+										manager.getString(
+												LangKey.keyBuilder(this@BotListener, "slash", "supportButtonLink"),
+												"https://discord.gg/eDQuKsFnSd"
+										), manager.getString(
+										LangKey.keyBuilder(this@BotListener, "slash", "supportButtonText"),
+										"My support server"
+								)
+								)
+								.withEmoji(Emoji.fromCustom("discord", 620220553793503274L, true)),
 							
-							Button.link(
-									manager.getString(
-											LangKey.keyBuilder(this@BotListener, "slash", "siteButtonLink"),
-											"https://invitelogger.me/"
-									),
-									manager.getString(
-											LangKey.keyBuilder(this@BotListener, "slash", "siteButtonText"),
-											"My website"
-									)
-							).withEmoji(Emoji.fromCustom("invlog_sheep", 763833470232559626L, false))
+							Button
+								.link(
+										manager.getString(
+												LangKey.keyBuilder(this@BotListener, "slash", "siteButtonLink"),
+												"https://invitelogger.me/"
+										), manager.getString(
+										LangKey.keyBuilder(this@BotListener, "slash", "siteButtonText"), "My website"
+								)
+								)
+								.withEmoji(Emoji.fromCustom("invlog_sheep", 763833470232559626L, false))
 					)
 					.build()
 				
-				event.reply(message)
+				event
+					.reply(message)
 					.setEphemeral(event.member?.hasPermission(Permission.MESSAGE_MANAGE) == false)
 					.queue()
 			}
-			is ReadyEvent -> {
+			
+			is ReadyEvent                   -> {
 				if (commandSend) return
 				commandSend = true
 				val command = Commands
@@ -167,16 +172,22 @@ class BotListener: CoroutineEventListener {
 					.setLocalizationFunction {
 						val element = it.replace(".", "+")
 						val cmdLocale = DiscordLocale
-							.values().toMutableList()
+							.values()
+							.toMutableList()
 						cmdLocale.remove(DiscordLocale.UNKNOWN)
 						return@setLocalizationFunction cmdLocale.associateWith { locale ->
-							lang.getLangManager(locale).getString(
-									LangKey.keyBuilder(this@BotListener, "commandLocalization", element),
-									it.split(".")[0]
-							)
+							lang
+								.getLangManager(locale)
+								.getString(
+										LangKey.keyBuilder(this@BotListener, "commandLocalization", element),
+										it.split(".")[0]
+								)
 						}
 					}
-				event.jda.updateCommands().addCommands(command).queue()
+				event.jda
+					.updateCommands()
+					.addCommands(command)
+					.queue()
 			}
 		}
 	}
