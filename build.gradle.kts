@@ -1,5 +1,7 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.gradle.jvm.tasks.Jar
+
 
 plugins {
     kotlin("jvm") version "1.7.10"
@@ -36,14 +38,14 @@ tasks.withType<KotlinCompile> {
 }
 
 
-tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+tasks.withType<ShadowJar> {
     archiveBaseName.set("GoodbyeInviteLoggerClassic")
     archiveClassifier.set("min")
     minimize()
     archiveVersion.set(botVersion)
 }
 
-tasks.withType<org.gradle.jvm.tasks.Jar> {
+tasks.withType<Jar> {
     manifest {
         attributes["Implementation-Title"] = "GoodbyeInviteLoggerClassic"
         attributes["Implementation-Version"] = botVersion
