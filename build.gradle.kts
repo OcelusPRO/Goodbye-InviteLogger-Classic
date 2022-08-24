@@ -1,3 +1,4 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
@@ -5,8 +6,8 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-group = "fr.ftnl"
-version = "1.0-SNAPSHOT"
+var botVersion = "1.0"
+var mainClassName : String = "MainKt"
 
 repositories {
     mavenCentral()
@@ -29,6 +30,23 @@ tasks.test {
     useJUnitPlatform()
 }
 
+
 tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "1.8"
+    kotlinOptions.jvmTarget = "16"
+}
+
+
+tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+    archiveBaseName.set("GoodbyeInviteLoggerClassic")
+    archiveClassifier.set("min")
+    minimize()
+    archiveVersion.set(botVersion)
+}
+
+tasks.withType<org.gradle.jvm.tasks.Jar> {
+    manifest {
+        attributes["Implementation-Title"] = "GoodbyeInviteLoggerClassic"
+        attributes["Implementation-Version"] = botVersion
+        attributes["Main-Class"] = mainClassName
+    }
 }
