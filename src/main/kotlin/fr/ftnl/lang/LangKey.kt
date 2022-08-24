@@ -9,8 +9,7 @@ package fr.ftnl.lang
  * @property key [String] key name
  */
 data class LangKey(val pkg : String, val clazz : String, val func : String, val key : String) {
-	override fun toString() : String =
-		"$pkg.$clazz.$func.$key"
+	override fun toString() : String = "$pkg.$clazz.$func.$key"
 	
 	companion object {
 		/**

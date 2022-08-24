@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="update build.gradle.kts" />
+    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="re-add langFiles samples">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <list id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,8 +20,56 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GoodbyeInviteLoggerClassic" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GoodbyeInviteLoggerClassic" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="GoodbyeInviteLoggerClassic" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="7" start2="6" end2="10" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
+        <range start1="16" end1="16" start2="19" end2="50" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
+        <range start1="35" end1="35" start2="69" end2="70" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
+        <range start1="41" end1="41" start2="76" end2="78" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
+        <range start1="49" end1="50" start2="86" end2="119" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
+        <range start1="52" end1="53" start2="121" end2="122" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
+        <range start1="61" end1="61" start2="130" end2="140" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
+        <range start1="66" end1="66" start2="145" end2="146" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
+        <range start1="70" end1="71" start2="150" end2="151" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
+        <range start1="93" end1="94" start2="173" end2="272" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
+        <range start1="114" end1="115" start2="292" end2="309" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,12 +86,15 @@
     "Project.color": "4e0341",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/OcelusPRO/IdeaProjects/GoodbyeInviteLoggerClassic/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -47,10 +103,42 @@
       <recent name="C:\Users\OcelusPRO\IdeaProjects\GoodbyeInviteLoggerClassic\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.GoodbyeInviteLoggerClassic [shadowJar]">
+    <configuration name="GoodbyeInviteLoggerClassic [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="INVITE_LOGGER_DISCORD_TOKEN" value="ODU5MTg3MzAxOTc5MjU4OTAx.GzUZPk.36xTGRkdH1CL8jql8ftUdtzb0JdiOcjo3rg2wQ" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="fr.ftnl.MainKt" />
+      <module name="GoodbyeInviteLoggerClassic.main" />
+      <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" nameIsGenerated="true">
       <envs>
-        <env name="INVITE_LOGGER_DISCORD_TOKEN" value="ODU5MTg3MzAxOTc5MjU4OTAx.GC3H-p.mxIrC95rf17zcXGTvzuokas1hKWHn5ztfreb0M" />
+        <env name="INVITE_LOGGER_DISCORD_TOKEN" value="ODU5MTg3MzAxOTc5MjU4OTAx.GzUZPk.36xTGRkdH1CL8jql8ftUdtzb0JdiOcjo3rg2wQ" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="GoodbyeInviteLoggerClassic.main" />
@@ -59,16 +147,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.GoodbyeInviteLoggerClassic [shadowJar]" />
+      <item itemvalue="Kotlin.MainKt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.GoodbyeInviteLoggerClassic [shadowJar]" />
+        <item itemvalue="Kotlin.MainKt" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="" />
+      <changelist id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="" />
       <created>1661301101733</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661301101733</updated>
-      <workItem from="1661301347687" duration="4954000" />
+      <workItem from="1661301347687" duration="13729000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1661305799458</created>
@@ -91,7 +190,105 @@
       <option name="project" value="LOCAL" />
       <updated>1661306521801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add lang files">
+      <created>1661306592817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1661306592817</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add lang files">
+      <created>1661306605813</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1661306605813</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add package">
+      <created>1661306864796</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661306864796</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add package">
+      <created>1661306897118</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1661306897118</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix package move">
+      <created>1661307402836</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661307402836</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix langKey object">
+      <created>1661307431449</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661307431449</updated>
+    </task>
+    <task id="LOCAL-00010" summary="IDE auto-reformat">
+      <created>1661307465423</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661307465423</updated>
+    </task>
+    <task id="LOCAL-00011" summary="sample lang files">
+      <created>1661307496739</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1661307496739</updated>
+    </task>
+    <task id="LOCAL-00012" summary="update lang files">
+      <created>1661354463672</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1661354463672</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update json path">
+      <created>1661354495145</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661354495145</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update import">
+      <created>1661355057694</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1661355057694</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add README.md">
+      <created>1661372267355</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661372267355</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update README.md -&gt; add release url">
+      <created>1661372407680</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661372407680</updated>
+    </task>
+    <task id="LOCAL-00017" summary="re-add langFiles samples">
+      <created>1661372641173</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1661372641173</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +309,22 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="set Ephemeral if member don't have MANAGE MESSAGE permission" />
     <MESSAGE value="update build.gradle.kts" />
-    <option name="LAST_COMMIT_MESSAGE" value="update build.gradle.kts" />
+    <MESSAGE value="add lang files" />
+    <MESSAGE value="add package" />
+    <MESSAGE value="fix package move" />
+    <MESSAGE value="fix langKey object" />
+    <MESSAGE value="IDE auto-reformat" />
+    <MESSAGE value="sample lang files" />
+    <MESSAGE value="update lang files" />
+    <MESSAGE value="update json path" />
+    <MESSAGE value="update import" />
+    <MESSAGE value="add README.md" />
+    <MESSAGE value="update README.md -&gt; add release url" />
+    <MESSAGE value="re-add langFiles samples" />
+    <option name="LAST_COMMIT_MESSAGE" value="re-add langFiles samples" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -15,12 +15,8 @@ class LangLoader {
 		if (LANG_MANAGERS.isEmpty()) {
 			val folder = File("lang")
 			folder.mkdirs()
-			folder
-				.listFiles()
-				?.forEach {
-					val name = it.name
-						.split(".")
-						.first()
+			folder.listFiles()?.forEach {
+					val name = it.name.split(".").first()
 					LANG_MANAGERS[name] = LangManager(name)
 				}
 		}
@@ -40,8 +36,6 @@ class LangLoader {
 	}
 	
 	private fun getLangByLocals(locals : DiscordLocale?) : String? {
-		return locals?.locale
-			?.split("-")
-			?.firstOrNull()
+		return locals?.locale?.split("-")?.firstOrNull()
 	}
 }

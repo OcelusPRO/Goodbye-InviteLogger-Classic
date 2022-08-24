@@ -11,10 +11,7 @@ import kotlin.time.Duration.Companion.hours
  * @property lang [String] fr.ftnl.lang
  */
 class LangManager(private val lang : String) {
-	private val internalLangCache = Cache
-		.Builder()
-		.expireAfterWrite(6.hours)
-		.build<LangManager, LangFile>()
+	private val internalLangCache = Cache.Builder().expireAfterWrite(6.hours).build<LangManager, LangFile>()
 	
 	init {
 		refreshCacheLangFile(LangFile.load(lang))
@@ -25,9 +22,8 @@ class LangManager(private val lang : String) {
 		return langFile
 	}
 	
-	private fun getLangFile() : LangFile =
-		internalLangCache.get(this)
-			?: refreshCacheLangFile(LangFile.load(lang))
+	private fun getLangFile() : LangFile = internalLangCache.get(this)
+		?: refreshCacheLangFile(LangFile.load(lang))
 	
 	/**
 	 * Get a [String] from the fr.ftnl.lang file
@@ -36,8 +32,7 @@ class LangManager(private val lang : String) {
 	 *
 	 * @return [String] value
 	 */
-	fun getString(key : LangKey, default : String) : String =
-		getString(key.toString(), default)
+	fun getString(key : LangKey, default : String) : String = getString(key.toString(), default)
 	
 	private fun getString(key : String, default : String) : String {
 		val langFile = getLangFile()

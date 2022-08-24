@@ -16,8 +16,7 @@ class LangFile(private val lang : String, data : JsonObject) {
 			save()
 		}
 	
-	private fun save() =
-		File("./lang/$lang.json").writeText(GSON.toJson(data))
+	private fun save() = File("./lang/$lang.json").writeText(GSON.toJson(data))
 	
 	companion object {
 		private val LANG_DIR = File("./lang/")
