@@ -16,5 +16,5 @@ disponible
 
 ## Lancement : 
 
-- Téléchargez la [dernière version]() dans votre dossier de travail
+- Téléchargez la [dernière version](https://github.com/OcelusPRO/Goodbye-InviteLogger-Classic/releases/) dans votre dossier de travail
 - Lancez la commande `java -jar GoodbyeInviteLoggerClassic.jar`
