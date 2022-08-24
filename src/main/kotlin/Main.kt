@@ -4,6 +4,7 @@ import dev.minn.jda.ktx.jdabuilder.injectKTX
 import dev.minn.jda.ktx.messages.Embed
 import lang.LangKey
 import lang.LangLoader
+import net.dv8tion.jda.api.Permission
 import net.dv8tion.jda.api.entities.emoji.Emoji
 import net.dv8tion.jda.api.events.GenericEvent
 import net.dv8tion.jda.api.events.ReadyEvent
@@ -152,7 +153,9 @@ class BotListener: CoroutineEventListener {
 					)
 					.build()
 				
-				event.reply(message).queue()
+				event.reply(message)
+					.setEphemeral(event.member?.hasPermission(Permission.MESSAGE_MANAGE) == false)
+					.queue()
 			}
 			is ReadyEvent -> {
 				if (commandSend) return
