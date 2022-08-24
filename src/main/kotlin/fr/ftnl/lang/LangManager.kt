@@ -1,4 +1,4 @@
-package lang
+package fr.ftnl.lang
 
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
@@ -7,8 +7,8 @@ import java.util.*
 import kotlin.time.Duration.Companion.hours
 
 /**
- * Manage lang
- * @property lang [String] lang
+ * Manage fr.ftnl.lang
+ * @property lang [String] fr.ftnl.lang
  */
 class LangManager(private val lang : String) {
 	private val internalLangCache = Cache
@@ -30,7 +30,7 @@ class LangManager(private val lang : String) {
 			?: refreshCacheLangFile(LangFile.load(lang))
 	
 	/**
-	 * Get a [String] from the lang file
+	 * Get a [String] from the fr.ftnl.lang file
 	 * @param key [String] key
 	 * @param default [String] default value
 	 *

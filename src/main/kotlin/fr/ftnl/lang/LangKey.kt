@@ -1,4 +1,4 @@
-package lang
+package fr.ftnl.lang
 
 /**
  * Manage LangKeys

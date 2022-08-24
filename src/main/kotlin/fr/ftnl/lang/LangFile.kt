@@ -1,13 +1,13 @@
-package lang
+package fr.ftnl.lang
 
 import GSON
 import com.google.gson.JsonObject
 import java.io.File
 
 /**
- * Manage lang files
- * @property lang [String] lang code
- * @property data [JsonObject] lang data
+ * Manage fr.ftnl.lang files
+ * @property lang [String] fr.ftnl.lang code
+ * @property data [JsonObject] fr.ftnl.lang data
  */
 class LangFile(private val lang : String, data : JsonObject) {
 	var data : JsonObject = data
@@ -17,7 +17,7 @@ class LangFile(private val lang : String, data : JsonObject) {
 		}
 	
 	private fun save() =
-		File("lang/$lang.json").writeText(GSON.toJson(data))
+		File("fr.ftnl.lang/$lang.json").writeText(GSON.toJson(data))
 	
 	companion object {
 		private val LANG_DIR = File("./lang/")
@@ -27,8 +27,8 @@ class LangFile(private val lang : String, data : JsonObject) {
 		}
 		
 		/**
-		 * Load lang file
-		 * @param lang [String] lang code
+		 * Load fr.ftnl.lang file
+		 * @param lang [String] fr.ftnl.lang code
 		 */
 		fun load(lang : String) : LangFile {
 			val file = File(LANG_DIR, "$lang.json")

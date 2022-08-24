@@ -1,9 +1,11 @@
+package fr.ftnl
+
 import com.google.gson.GsonBuilder
 import dev.minn.jda.ktx.events.CoroutineEventListener
 import dev.minn.jda.ktx.jdabuilder.injectKTX
 import dev.minn.jda.ktx.messages.Embed
-import lang.LangKey
-import lang.LangLoader
+import fr.ftnl.lang.LangKey
+import fr.ftnl.lang.LangLoader
 import net.dv8tion.jda.api.Permission
 import net.dv8tion.jda.api.entities.emoji.Emoji
 import net.dv8tion.jda.api.events.GenericEvent

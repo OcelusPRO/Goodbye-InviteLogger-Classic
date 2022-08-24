@@ -1,4 +1,4 @@
-package lang
+package fr.ftnl.lang
 
 import net.dv8tion.jda.api.entities.Guild
 import net.dv8tion.jda.api.entities.User
@@ -8,7 +8,7 @@ import java.io.File
 private val LANG_MANAGERS : MutableMap<String, LangManager> = mutableMapOf()
 
 /**
- * Loads the lang files.
+ * Loads the fr.ftnl.lang files.
  */
 class LangLoader {
 	init {

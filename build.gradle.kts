@@ -7,7 +7,7 @@ plugins {
 }
 
 var botVersion = "1.0"
-var mainClassName : String = "MainKt"
+var mainClassName : String = "fr.ftnl.MainKt"
 
 repositories {
     mavenCentral()
