@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="add alias for commands">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="update lang files">
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <list id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +154,7 @@
       <updated>1661301101733</updated>
       <workItem from="1661301347687" duration="16112000" />
       <workItem from="1661391824179" duration="22000" />
-      <workItem from="1662292657025" duration="4792000" />
+      <workItem from="1662292657025" duration="5053000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1661305799458</created>
@@ -296,7 +296,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662299431504</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="fix command list">
+      <created>1662299836831</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1662299836831</updated>
+    </task>
+    <task id="LOCAL-00022" summary="update lang files">
+      <created>1662299850675</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1662299850675</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +337,6 @@
     <MESSAGE value="fix langKey object" />
     <MESSAGE value="IDE auto-reformat" />
     <MESSAGE value="sample lang files" />
-    <MESSAGE value="update lang files" />
     <MESSAGE value="update json path" />
     <MESSAGE value="update import" />
     <MESSAGE value="add README.md" />
@@ -332,7 +345,9 @@
     <MESSAGE value="Reformat to follow conventional kotlin format" />
     <MESSAGE value="add status" />
     <MESSAGE value="add alias for commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="add alias for commands" />
+    <MESSAGE value="fix command list" />
+    <MESSAGE value="update lang files" />
+    <option name="LAST_COMMIT_MESSAGE" value="update lang files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
