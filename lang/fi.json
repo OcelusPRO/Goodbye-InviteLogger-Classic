@@ -4,7 +4,13 @@
       "BotListener": {
         "commandLocalization": {
           "info+name": "info",
-          "info+description": "InviteLogger classic has ended its life"
+          "info+description": "InviteLogger classic has ended its life",
+          "help+name": "help",
+          "help+description": "InviteLogger classic has ended its life",
+          "invites+name": "invites",
+          "invites+description": "InviteLogger classic has ended its life",
+          "leaderboard+name": "leaderboard",
+          "leaderboard+description": "InviteLogger classic has ended its life"
         },
         "embed": {
           "title": "It\u0027s time",

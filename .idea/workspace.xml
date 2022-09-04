@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="Reformat to follow conventional kotlin format">
+    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="add alias for commands">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/ftnl/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/ftnl/Main.kt" afterDir="false" />
     </list>
     <list id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +88,7 @@
       <recent name="C:\Users\OcelusPRO\IdeaProjects\GoodbyeInviteLoggerClassic\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.GoodbyeInviteLoggerClassic [shadowJar]">
+  <component name="RunManager" selected="Kotlin.MainKt">
     <configuration name="GoodbyeInviteLoggerClassic [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -113,7 +112,7 @@
     </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <envs>
-        <env name="INVITE_LOGGER_DISCORD_TOKEN" value="ODU5MTg3MzAxOTc5MjU4OTAx.GzUZPk.36xTGRkdH1CL8jql8ftUdtzb0JdiOcjo3rg2wQ" />
+        <env name="INVITE_LOGGER_DISCORD_TOKEN" value="ODU5MTg3MzAxOTc5MjU4OTAx.GQl8HY.adTinYIPPq638lxoFv-Z7_hobX6DEwgnwdmW7Q" />
       </envs>
       <option name="MAIN_CLASS_NAME" value="fr.ftnl.MainKt" />
       <module name="GoodbyeInviteLoggerClassic.main" />
@@ -139,8 +138,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.GoodbyeInviteLoggerClassic [shadowJar]" />
         <item itemvalue="Kotlin.MainKt" />
+        <item itemvalue="Gradle.GoodbyeInviteLoggerClassic [shadowJar]" />
       </list>
     </recent_temporary>
   </component>
@@ -155,7 +154,7 @@
       <updated>1661301101733</updated>
       <workItem from="1661301347687" duration="16112000" />
       <workItem from="1661391824179" duration="22000" />
-      <workItem from="1662292657025" duration="4508000" />
+      <workItem from="1662292657025" duration="4792000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1661305799458</created>
@@ -283,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661373039279</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add status">
+      <created>1662299405710</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1662299405710</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add alias for commands">
+      <created>1662299431504</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1662299431504</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +330,9 @@
     <MESSAGE value="update README.md -&gt; add release url" />
     <MESSAGE value="re-add langFiles samples" />
     <MESSAGE value="Reformat to follow conventional kotlin format" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat to follow conventional kotlin format" />
+    <MESSAGE value="add status" />
+    <MESSAGE value="add alias for commands" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alias for commands" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
