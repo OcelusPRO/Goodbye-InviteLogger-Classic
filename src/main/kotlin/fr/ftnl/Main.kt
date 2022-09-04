@@ -156,7 +156,7 @@ class BotListener : CoroutineEventListener {
 				commandSend = true
 				val command: MutableList<CommandData> = mutableListOf()
 				
-				val names = listOf("info", "help ", "invites", "leaderboard")
+				val names = listOf("info", "help", "invites", "leaderboard")
 				names.forEach {name ->
 					command.add(
 						Commands.slash(name, "InviteLogger classic has ended its life").setLocalizationFunction {
