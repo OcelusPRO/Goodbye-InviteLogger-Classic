@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="re-add langFiles samples">
+    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="Reformat to follow conventional kotlin format">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/ftnl/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/ftnl/Main.kt" afterDir="false" />
     </list>
-    <list id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,22 +53,8 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="10" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
-        <range start1="16" end1="16" start2="19" end2="50" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
-        <range start1="35" end1="35" start2="69" end2="70" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
-        <range start1="41" end1="41" start2="76" end2="78" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
-        <range start1="49" end1="50" start2="86" end2="119" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
-        <range start1="52" end1="53" start2="121" end2="122" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
-        <range start1="61" end1="61" start2="130" end2="140" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
-        <range start1="66" end1="66" start2="145" end2="146" changelist="4fa66e45-a77f-4b43-9d48-03d94e4e5214" />
-        <range start1="70" end1="71" start2="150" end2="151" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
-        <range start1="93" end1="94" start2="173" end2="272" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
-        <range start1="114" end1="115" start2="292" end2="309" changelist="19436832-5eed-4826-96d8-5a62dc58911e" />
-      </ranges>
-    </file>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,6 +73,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.google.cloudcode.ide_session_index": "20220904_0000",
     "last_opened_file_path": "C:/Users/OcelusPRO/IdeaProjects/GoodbyeInviteLoggerClassic/src/main/kotlin",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -167,7 +153,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1661301101733</updated>
-      <workItem from="1661301347687" duration="13729000" />
+      <workItem from="1661301347687" duration="16112000" />
+      <workItem from="1661391824179" duration="22000" />
+      <workItem from="1662292657025" duration="4508000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1661305799458</created>
@@ -288,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661372641173</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Reformat to follow conventional kotlin format">
+      <created>1661373039279</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1661373039279</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +316,8 @@
     <MESSAGE value="add README.md" />
     <MESSAGE value="update README.md -&gt; add release url" />
     <MESSAGE value="re-add langFiles samples" />
-    <option name="LAST_COMMIT_MESSAGE" value="re-add langFiles samples" />
+    <MESSAGE value="Reformat to follow conventional kotlin format" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformat to follow conventional kotlin format" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

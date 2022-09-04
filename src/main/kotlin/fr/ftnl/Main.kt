@@ -6,7 +6,10 @@ import dev.minn.jda.ktx.jdabuilder.injectKTX
 import dev.minn.jda.ktx.messages.Embed
 import fr.ftnl.lang.LangKey
 import fr.ftnl.lang.LangLoader
+import net.dv8tion.jda.api.JDA
+import net.dv8tion.jda.api.OnlineStatus
 import net.dv8tion.jda.api.Permission
+import net.dv8tion.jda.api.entities.Activity
 import net.dv8tion.jda.api.entities.emoji.Emoji
 import net.dv8tion.jda.api.events.GenericEvent
 import net.dv8tion.jda.api.events.ReadyEvent
@@ -32,9 +35,13 @@ var commandSend = false
 
 fun main(args : Array<String>) {
 	DefaultShardManagerBuilder.create(GatewayIntent.getIntents(0))
-		.setToken(System.getenv("INVITE_LOGGER_DISCORD_TOKEN")).setAutoReconnect(true).disableCache(
-			CacheFlag.values().toList()
-		).setMemberCachePolicy(MemberCachePolicy.NONE).addEventListeners(BotListener()).injectKTX().build()
+		.setToken(System.getenv("INVITE_LOGGER_DISCORD_TOKEN"))
+		.setAutoReconnect(true)
+		.disableCache(CacheFlag.values().toList())
+		.setMemberCachePolicy(MemberCachePolicy.NONE)
+		.addEventListeners(BotListener())
+		.injectKTX()
+		.build()
 }
 
 class BotListener : CoroutineEventListener {
@@ -143,6 +150,7 @@ class BotListener : CoroutineEventListener {
 			}
 			
 			is ReadyEvent                   -> {
+				refreshPresence(event.jda)
 				if (commandSend) return
 				commandSend = true
 				val command =
@@ -161,4 +169,7 @@ class BotListener : CoroutineEventListener {
 			}
 		}
 	}
+	
+	private fun refreshPresence(jda: JDA) =
+		jda.presence.setPresence(OnlineStatus.DO_NOT_DISTURB, Activity.watching("the end of a story"))
 }
