@@ -15,6 +15,7 @@ import net.dv8tion.jda.api.events.GenericEvent
 import net.dv8tion.jda.api.events.ReadyEvent
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent
 import net.dv8tion.jda.api.interactions.DiscordLocale
+import net.dv8tion.jda.api.interactions.commands.build.CommandData
 import net.dv8tion.jda.api.interactions.commands.build.Commands
 import net.dv8tion.jda.api.interactions.components.buttons.Button
 import net.dv8tion.jda.api.requests.GatewayIntent
@@ -153,18 +154,26 @@ class BotListener : CoroutineEventListener {
 				refreshPresence(event.jda)
 				if (commandSend) return
 				commandSend = true
-				val command =
-					Commands.slash("info", "InviteLogger classic has ended its life").setLocalizationFunction {
+				val command: MutableList<CommandData> = mutableListOf()
+				
+				val names = listOf("info", "help ", "invites", "leaderboard")
+				names.forEach {name ->
+					command.add(
+						Commands.slash(name, "InviteLogger classic has ended its life").setLocalizationFunction {
 							val element = it.replace(".", "+")
 							val cmdLocale = DiscordLocale.values().toMutableList()
 							cmdLocale.remove(DiscordLocale.UNKNOWN)
 							return@setLocalizationFunction cmdLocale.associateWith { locale ->
 								lang.getLangManager(locale).getString(
-										LangKey.keyBuilder(this@BotListener, "commandLocalization", element),
-										it.split(".")[0]
-									)
+									LangKey.keyBuilder(this@BotListener, "commandLocalization", element),
+									it.split(".")[0]
+								)
 							}
 						}
+					)
+				}
+				
+
 				event.jda.updateCommands().addCommands(command).queue()
 			}
 		}
