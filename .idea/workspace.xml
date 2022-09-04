@@ -88,7 +88,7 @@
       <recent name="C:\Users\OcelusPRO\IdeaProjects\GoodbyeInviteLoggerClassic\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.MainKt">
+  <component name="RunManager" selected="Gradle.GoodbyeInviteLoggerClassic [shadowJar]">
     <configuration name="GoodbyeInviteLoggerClassic [shadowJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,8 +138,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.MainKt" />
         <item itemvalue="Gradle.GoodbyeInviteLoggerClassic [shadowJar]" />
+        <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
   </component>

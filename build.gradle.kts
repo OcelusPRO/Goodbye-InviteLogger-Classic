@@ -8,7 +8,7 @@ plugins {
     id("com.github.johnrengelman.shadow") version "7.1.2"
 }
 
-var botVersion = "1.1"
+var botVersion = "1.0.1"
 var mainClassName : String = "fr.ftnl.MainKt"
 
 repositories {
