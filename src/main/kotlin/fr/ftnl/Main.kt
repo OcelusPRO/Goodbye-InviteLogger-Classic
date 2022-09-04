@@ -1,5 +1,6 @@
 package fr.ftnl
 
+import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dev.minn.jda.ktx.events.CoroutineEventListener
 import dev.minn.jda.ktx.jdabuilder.injectKTX
@@ -24,7 +25,7 @@ import net.dv8tion.jda.api.utils.MemberCachePolicy
 import net.dv8tion.jda.api.utils.cache.CacheFlag
 import net.dv8tion.jda.api.utils.messages.MessageCreateBuilder
 
-val GSON = GsonBuilder().setPrettyPrinting().create()
+val GSON : Gson = GsonBuilder().setPrettyPrinting().create()
 
 val lang = LangLoader()
 val memeList = listOf(
@@ -34,7 +35,7 @@ val memeList = listOf(
 var commandSend = false
 
 
-fun main(args : Array<String>) {
+fun main() {
 	DefaultShardManagerBuilder.create(GatewayIntent.getIntents(0))
 		.setToken(System.getenv("INVITE_LOGGER_DISCORD_TOKEN"))
 		.setAutoReconnect(true)

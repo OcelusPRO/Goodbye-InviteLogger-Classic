@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="update lang files">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+    <list default="true" id="19436832-5eed-4826-96d8-5a62dc58911e" name="Changes" comment="update version">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/fr/ftnl/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/fr/ftnl/Main.kt" afterDir="false" />
     </list>
     <list id="4fa66e45-a77f-4b43-9d48-03d94e4e5214" name="noCommit" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +155,7 @@
       <updated>1661301101733</updated>
       <workItem from="1661301347687" duration="16112000" />
       <workItem from="1661391824179" duration="22000" />
-      <workItem from="1662292657025" duration="5053000" />
+      <workItem from="1662292657025" duration="6096000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1661305799458</created>
@@ -310,7 +311,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662299850675</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="update version">
+      <created>1662299909684</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1662299909684</updated>
+    </task>
+    <task id="LOCAL-00024" summary="update version">
+      <created>1662300128282</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1662300128282</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +362,8 @@
     <MESSAGE value="add alias for commands" />
     <MESSAGE value="fix command list" />
     <MESSAGE value="update lang files" />
-    <option name="LAST_COMMIT_MESSAGE" value="update lang files" />
+    <MESSAGE value="update version" />
+    <option name="LAST_COMMIT_MESSAGE" value="update version" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
