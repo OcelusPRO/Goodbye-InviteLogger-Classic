@@ -2,44 +2,34 @@
   "fr": {
     "ftnl": {
       "BotListener": {
-        "commandLocalization": {
-          "info+name": "info",
-          "info+description": "InviteLogger classic has ended its life",
-          "help+name": "help",
-          "help+description": "InviteLogger classic has ended its life",
-          "invites+name": "invites",
-          "invites+description": "InviteLogger classic has ended its life",
-          "leaderboard+name": "leaderboard",
-          "leaderboard+description": "InviteLogger classic has ended its life"
-        },
         "embed": {
-          "title": "It\u0027s time",
-          "description": "After two great years of good and loyal service, it is time for me to leave you.\n\nInviteLogger Classic is terminating these services as of \u003ct:1661983200:D\u003e\nThis decision was made on the basis of several factors:",
+          "title": "Il est temps",
+          "description": "Après 6 ans de bons et loyaux services, il est temps de se dire au revoir...\nLe bot FTNL termine donc son activité au \u003ct:1704063600:f\u003e",
           "field1": {
-            "title": "It\u0027s a fork :",
-            "value": "InviteLogger classic is a fork of an almost dead open-source project,\nit succeeded the InviteManager bot by taking over its code base."
+            "title": "Une forte pression",
+            "value": "FTNL a été pour moi (ocelus, son créateur) une très forte pression ces dernières années, une crainte constante de décevoir les utilisateurs, de devoir gérer toute une équipe, ou encore les sommes astronomiques que le bot m\u0027a coûtées... J\u0027ai besoin de faire une pause et de me détacher au moins en partie de toute cette pression."
           },
           "field2": {
-            "title": "It has a non-negligible cost :",
-            "value": "InviteLogger classic consumes a large amount of resources,\nit is currently a large financial sinkhole the bot being completely free."
+            "title": "Un cout non négligable :",
+            "value": "FTNL a toujours été entièrement gratuit, les quelques donations (extrêmement rares) ne suffisaient clairement pas à maintenir l\u0027équilibre financier.\nL\u0027hébergement du bot coûtait en moyenne 70 € tous les mois et ce, ces six dernières années, ce qui représente plusieurs milliers d\u0027euros dépensés pour le maintenir.\nCes derniers mois, même avec la fin annoncée, j\u0027avais peur de ne pas réussir à payer l\u0027hébergement."
           },
           "field3": {
-            "title": "Message content intent :",
-            "value": "As of the end date of InviteLogger classic,\nDiscord puts a limitation for bots regarding access to message content,\nit would be too much work to adapt the bot to slash commands,\nthis reason is the one that has finished hammering the nail in the coffin."
+            "title": "Et maintenant ?",
+            "value": "FTNL n\u0027est pas destiné à avoir un arrêt définitif, cependant, cet arrêt va sans doute durer plusieurs années.\nUne solution alternative a été mise en place pour les serveurs pouvant se le permettre : un abonnement est disponible pour un successeur à FTNL :\n- [FTNL-Legacy](https://discord.com/api/oauth2/authorize?client_id\u003d575642702180253696\u0026permissions\u003d8\u0026scope\u003dapplications.commands%20bot)\nCe dernier reprend l\u0027ensemble des fonctions de FTNL (celles de FTNL-PRO lui seront ajoutées avec le temps) ainsi que quelques fonctions exclusives. Cependant, ce bot est payant et ne contiendra pas la fonction de blacklist devenue obsolète avec le temps et l\u0027amélioration constante de nos moyens de détection des raids/spam."
           },
           "field4": {
-            "title": "Some statistics :",
-            "value": "InviteLogger Classic tracked 155 million logins from 46 million invitees,\nfulfilled 15 million orders,\nviewed 42 million invite codes and visited 212,000 servers,\nfor a database of about 100 GB."
+            "title": "Quelques statistiques :",
+            "value": "Plus de 365 000 tentatives de spam ont été bloquées par FTNL, ce qui fait en moyenne 166,6 par jour !\n175 276, le nombre d\u0027ajouts et de retraits du bot sur des serveurs. Il en aura vu du paysage même s\u0027il n\u0027est pas resté partout.\nPlus de 20 000 lignes de code ! (ça fait beaucoup)\n\n\nEncore un grand merci à tous ceux qui ont soutenu FTNL, [ce n\u0027est qu\u0027un au revoir](https://www.youtube.com/watch?v\u003d2X_FpnZ4k1c) !"
           }
         },
         "buttons": {
           "discord": {
-            "link": "https://discord.gg/eDQuKsFnSd",
-            "label": "My support server"
+            "link": "https://discord.gg/WYeeZS339B",
+            "label": "Serveur communautaire"
           },
-          "site": {
-            "link": "https://invitelogger.me/",
-            "label": "My website"
+          "discordEntreprise": {
+            "link": "https://discord.gg/JY9YQCdd4X",
+            "label": "Serveur du nouveau bot"
           }
         }
       }

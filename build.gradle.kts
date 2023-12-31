@@ -18,8 +18,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
-    implementation("net.dv8tion:JDA:5.0.0-alpha.18") { exclude("opus-java") }
-    implementation("com.github.minndevelopment:jda-ktx:081a177")
+    implementation("net.dv8tion:JDA:5.0.0-beta.13") { exclude("opus-java") }
+    implementation("io.github.minndevelopment:jda-ktx:9370cb1")
     implementation("com.google.code.gson:gson:2.9.0")
     implementation("io.github.reactivecircus.cache4k:cache4k:0.7.0")
     
